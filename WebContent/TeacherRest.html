@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Teacher</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<style type="text/css">
+table {
+	width: 100%;
+	margin: 20px 0;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid #cdcdcd;
+}
+
+table th, table td {
+	padding: 5px;
+	text-align: left;
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Teacher Manager</h2>
+
+		<table class="table">
+			<tr>
+				<th>Select</th>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Address</th>
+			</tr>
+
+			<tr>
+			<tbody id="datatable" class="table table-hover">
+			</tbody>
+
+		</table>
+		<form>
+			<table class="table table-hover">
+				<tbody>
+				<thead>
+
+					<table>
+						<tr>
+
+							<th>ID:</th>
+							<th>Name:</th>
+							<th>Department:</th>
+							<th>Address:</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr></tr>
+							<tr>
+								<th><input type="text" id="id" class="form-control"
+									name="id"></th>
+								<th><input type="text" id="name" class="form-control"
+									name="name"></th>
+								<th><input type="text" id="dept" class="form-control"
+									name="dept"></th>
+								<th><input type="text" id="address" class="form-control"
+									name="address"></th>
+
+							</tr>
+
+						</tbody>
+					</table>
+					<tr>
+					
+						<th><input type="button" name="addButton"
+							onclick="insertTeacher()" class="btn btn-default" value="ADD" /> <input
+							type="button" name="loadButton" onclick="getAllTeachers()"
+							class="btn btn-default" value="LOAD" />
+							<input type="button" name="updateButton" class="btn btn-default"
+								onclick="updateTeacher()" value="UPDATE"><input type="button"
+							name="deleteButton" class="btn btn-default" value="DELETE"
+							onclick="removeTeacher()" /></th>
+
+					</tr>
+				</tbody>
+			</table>
+	</div>
+
+	</form>
+	<div class="container">
+		<a href="index.html">
+			<button type="submit" class="btn btn-default">BACK</button>
+		</a>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/JTFunctions.js">
+	
+</script>
+
+
+
+</html>
