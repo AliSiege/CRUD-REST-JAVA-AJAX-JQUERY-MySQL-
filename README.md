@@ -1,5 +1,5 @@
 # CRUD-REST-JAVA-AJAX-JQUERY-MySQL-
-a web application that runs on tomcat server and it has built with JAVA EE RESTful
+  a web application that runs on tomcat server and it has built with JAVA EE RESTful
 -when you want to use this application you need to have these things:
 1-bootstrap 3.7
 2-MySql (Database)
